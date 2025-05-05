@@ -1,4 +1,7 @@
-/* Container for centering the content */
+#box {
+    margin-left: 36rem;
+}
+
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -9,7 +12,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Styling for the input box */
 .search-input {
     width: 100%;
     padding: 12px 16px;
@@ -29,7 +31,6 @@
     box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
 }
 
-/* Card design */
 .card {
     background-color: #fff;
     padding: 20px;
@@ -44,7 +45,6 @@
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Styling for card titles and descriptions */
 .card h3 {
     margin: 0 0 10px;
     font-size: 22px;
@@ -57,7 +57,6 @@
     font-size: 16px;
 }
 
-/* No results message */
 .no-results {
     text-align: center;
     color: #d9534f;

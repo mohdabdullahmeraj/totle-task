@@ -1,5 +1,6 @@
 import React from 'react';
 import TopicSearch from './TopicSearch';
+import './App.css';
 
 function App() {
   return (

@@ -59,7 +59,6 @@ const topics = [
     { id: 55, name: "Machine Learning", category: "Computer Science" }
 ];
 
-//const TopicSearch = () => {}
 function TopicSearch() {
     const [searchTerm, setSearchTerm] = useState("");
 
@@ -72,24 +71,26 @@ function TopicSearch() {
     );
 
     return (
-        <div className="container">
-            <input
-                type="text"
-                value={searchTerm}
-                onChange={handleSearch}
-                placeholder="Search topics..."
-                className="search-input"
-            />
-            {filteredTopics.length > 0 ? (
-                filteredTopics.map((topic) => (
-                    <div key={topic.id} className="card">
-                        <h3>{topic.name}</h3>
-                        <p>{topic.category}</p>
-                    </div>
-                ))
-            ) : (
-                <p className="no-results">No topics found</p>
-            )}
+        <div id="box">
+            <div className="container">
+                <input
+                    type="text"
+                    value={searchTerm}
+                    onChange={handleSearch}
+                    placeholder="Search topics..."
+                    className="search-input"
+                />
+                {filteredTopics.length > 0 ? (
+                    filteredTopics.map((topic) => (
+                        <div key={topic.id} className="card">
+                            <h3>{topic.name}</h3>
+                            <p>{topic.category}</p>
+                        </div>
+                    ))
+                ) : (
+                    <p className="no-results">No topics found</p>
+                )}
+            </div>
         </div>
     );
 }
